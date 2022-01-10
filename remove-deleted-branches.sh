@@ -7,9 +7,9 @@
 #
 # Example:
 #   # Run with no force delete
-#   alias gc="sh /Users/ianbunag/Documents/projects/personal/scripts/remove-deleted-branches.sh normal 'main$' 'master$'"
+#   alias gc="sh /path/to/shell-utils/remove-deleted-branches.sh normal main$ master$"
 #   # Run with force delete
-#   alias gcf="sh /Users/ianbunag/Documents/projects/personal/scripts/remove-deleted-branches.sh force 'main$' 'master$'"
+#   alias gcf="sh /path/to/shell-utils/remove-deleted-branches.sh force main$ master$"
 
 function filter() {
   local patterns=$*
