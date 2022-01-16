@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Usage:
+# Remove non base branches
 # - Alias in preferred shell
 # - Pass mode as first argument
 # - Pass in ignored branch patterns
