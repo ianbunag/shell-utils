@@ -2,6 +2,16 @@
 
 Shell utility scripts
 
+- [Clean branches](#clean-branches)
+  - [Registration](#registration)
+  - [Usage](#usage)
+- [Google Chrome](#google-chrome)
+  - [Registration](#registration-1)
+  - [Usage](#usage-1)
+- [JIRA identified git commit](#jira-identified-git-commit)
+  - [Registration](#registration-2)
+  - [Usage](#usage-2)
+
 ## Clean branches
 
 Remove non base branches
@@ -42,4 +52,27 @@ alias c="sh /path/to/shell-utils/google-chrome.sh"
 c
 # Open HTML file in Google Chrome
 c index.html
+```
+
+## JIRA identified git commit
+
+Automatically prefix JIRA identity to commit message
+- For branch names with pattern XXX-1234-short-description
+- Identity will be extracted as XXX-1234
+
+### Registration
+```sh
+alias gcj="sh /path/to/shell-utils/jira-git-commit.sh"
+```
+
+### Usage
+```sh
+gcj Fix logging
+
+git log
+commit 1f017dde805405c98336730886919e3c238fbd6b (HEAD -> XXX-1234-short-description)
+Author: Some User <some.user@gmail.com>
+Date:   Fri Jul 1 09:59:01 2022 +0800
+
+    XXX-1234: Fix logging
 ```
