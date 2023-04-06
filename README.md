@@ -1,4 +1,4 @@
-# shell-**utils**
+# shell-utils
 
 Shell utility scripts
 
@@ -15,38 +15,44 @@ Shell utility scripts
 ## Clean branches
 
 Remove non base branches
+
 - Alias in preferred shell
 - Pass mode as first argument
 - Pass in ignored branch patterns
 
 ### Registration
+
 ```sh
 # Run with no force delete
-alias gc="sh /path/to/shell-utils/clean-branches.sh normal main$ master$"
+alias gx="sh /path/to/shell-utils/clean-branches.sh normal main$ master$"
 # Run with force delete
-alias gcf="sh /path/to/shell-utils/clean-branches.sh force main$ master$"
+alias gxf="sh /path/to/shell-utils/clean-branches.sh force main$ master$"
 ```
 
 ### Usage
+
 ```sh
 # Run with no force delete
-gc
+gx
 # Run with force delete
-gcf
+gxf
 ```
 
 ## Google Chrome
 
 Remove non base branches
+
 - Open current directory in Google Chrome
 - Open HTML file in Google Chrome
 
 ### Registration
+
 ```sh
 alias c="sh /path/to/shell-utils/google-chrome.sh"
 ```
 
 ### Usage
+
 ```sh
 # Open current directory in Google Chrome
 c
@@ -57,15 +63,18 @@ c index.html
 ## JIRA identified git commit
 
 Automatically prefix JIRA identity to commit message
+
 - For branch names with pattern XXX-1234-short-description
 - Identity will be extracted as XXX-1234
 
 ### Registration
+
 ```sh
 alias gcj="sh /path/to/shell-utils/jira-git-commit.sh"
 ```
 
 ### Usage
+
 ```sh
 gcj Fix logging
 
