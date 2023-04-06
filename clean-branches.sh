@@ -16,7 +16,7 @@ function filter() {
 
   if [ $# -gt 0 ]
     then
-      grep -v $(echo $patterns | sed "s/ /\\\|/g")
+      grep -vE "$(echo $patterns | sed 's/ /|/g')"
     else
       cat
   fi
