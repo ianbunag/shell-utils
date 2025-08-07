@@ -71,6 +71,7 @@ Automatically prefix JIRA identity to commit message
 
 ```sh
 alias gcj="sh /path/to/shell-utils/jira-git-commit.sh"
+alias gcjn="sh /path/to/shell-utils/jira-git-commit-no-verify.sh"
 ```
 
 ### Usage
